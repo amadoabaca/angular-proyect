@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li><a routerLink="/">Todos</a></li>
+    <li><a routerLink="/male">Hombres</a></li>
+    <li><a routerLink="/female">Mujeres</a></li>
+    <li><a routerLink="/earth">Tierra</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
+
+<app-character-card *ngFor="let character of allCharacters"></app-character-card>
